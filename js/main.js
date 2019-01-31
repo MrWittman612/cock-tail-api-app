@@ -17,10 +17,10 @@ function getCockTailList(e) {
     for (var i in search.drinks) {
         output +=
         '<div class="column">'+
-        '<ul>' +
-        '<li> '+search.drinks[i].strDrink+'  </li>' +
-        '</ul>'+
+        '<div class="img-container">'+
         '<img src=" '+search.drinks[i].strDrinkThumb+' "></img>' +
+        '<div>'+search.drinks[i].strDrink+'</div>'+
+        '</div>'+
         '</div>';
     }
     document.getElementById('recipes').innerHTML = output;

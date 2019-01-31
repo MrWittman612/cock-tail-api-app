@@ -1,19 +1,21 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: Impact, Charcoal, sans-serif;
-  background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: rgb(10, 192, 241);
   min-height: 100vh;
 }
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
-text-align: center;
+  text-align: center;
 }
-h3{
-  color: rgb(255, 255, 255);
 
+h3 {
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -44,7 +46,6 @@ h3{
 
 .topnav .search-container {
   float: right;
-
 }
 
 .topnav input[type=text] {
@@ -74,20 +75,21 @@ h3{
   background: #ccc;
 }
 
-
-img{
+img {
   height: 200px;
   width: 200px;
-
+  margin: 0 auto;
 }
 
-ul{
-  list-style: none;
-}
-
-.container{
+.container {
   width: 90%;
   margin: auto;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .column {
@@ -112,6 +114,7 @@ ul{
   .topnav .search-container {
     float: none;
   }
+
   .topnav a, .topnav input[type=text], .topnav .search-container button {
     float: none;
     display: block;
@@ -120,6 +123,7 @@ ul{
     margin: 0;
     padding: 14px;
   }
+
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
