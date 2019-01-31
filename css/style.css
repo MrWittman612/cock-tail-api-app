@@ -90,9 +90,11 @@ img {
   position: relative;
   text-align: left;
   color: white;
+  width: 250px;
   height: 250px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .column {
@@ -108,13 +110,14 @@ img {
 }
 
 #drinkname{
+  display: inline-block;
   margin-left: 5px;
   padding-top: 5px;
   color: #FFFFFF;
   text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
   color: #FFFFFF;
   }
-}
+
 
 
 @media screen and (max-width: 600px) {
@@ -143,5 +146,13 @@ img {
   }
   .column {
     width: 100%;
+    float: none;
+  }
+
+  .img-container {
+    position: relative;
+    text-align: left;
+    width: auto;
+    height: 250px;
   }
 }
