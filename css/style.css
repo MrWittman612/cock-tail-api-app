@@ -88,8 +88,11 @@ img {
 
 .img-container {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
 }
 
 .column {
@@ -102,6 +105,15 @@ img {
   content: "";
   display: table;
   clear: both;
+}
+
+#drinkname{
+  margin-left: 5px;
+  padding-top: 5px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  color: #FFFFFF;
+  }
 }
 
 

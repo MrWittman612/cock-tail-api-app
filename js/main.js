@@ -10,24 +10,22 @@ function getCockTailList(e) {
 
   xhr.onload = function() {
 
-    if(this.status == 200){
-    var search = JSON.parse(this.responseText);
-    var output = '';
+    if (this.status == 200) {
+      var search = JSON.parse(this.responseText);
+      var output = '';
 
-    for (var i in search.drinks) {
+      for (var i in search.drinks) {
         output +=
-        '<div class="column">'+
-        '<div class="img-container">'+
-        '<img src=" '+search.drinks[i].strDrinkThumb+' "></img>' +
-        '<div>'+search.drinks[i].strDrink+'</div>'+
-        '</div>'+
-        '</div>';
+          '<div class="column">' +
+          '<div class="img-container" style="background-image: url(' + search.drinks[i].strDrinkThumb + ');">' +
+          // '<img src=" '+search.drinks[i].strDrinkThumb+' "></img>' +
+          '<div id="drinkname">' + search.drinks[i].strDrink + '</div>' +
+          '</div>' +
+          '</div>';
+      }
+      document.getElementById('recipes').innerHTML = output;
+
     }
-    document.getElementById('recipes').innerHTML = output;
-
-}
-document.getElementById('recipes').innerHTML = output;
-
-}
-xhr.send();
+  }
+  xhr.send();
 }
