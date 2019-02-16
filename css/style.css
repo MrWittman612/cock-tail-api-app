@@ -90,7 +90,7 @@ img {
   position: relative;
   text-align: left;
   color: white;
-  width: 250px;
+  width: auto;
   height: 250px;
   background-position: center;
   background-size: cover;
